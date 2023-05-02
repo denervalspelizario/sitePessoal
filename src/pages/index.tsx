@@ -1,6 +1,10 @@
 import Head from "next/head"
 import styles from '../styles/home.module.scss'
 
+import Image from 'next/image'
+
+import techImage from '../../public/images/techs.svg'
+
 export default function Home() {
   return (
     <>
@@ -46,7 +50,21 @@ export default function Home() {
             <span>Criar sistemas web, sites usando as tecnologias mais modernas e requisitadas pelo mercado. </span>
           </section>
 
-          
+        </div>
+
+        <div className={styles.nextLevelContent}>
+          <Image 
+            quality={100}  // usando recurso do next para manter a qualidade maxima possivel 100% 
+            src={techImage}  
+            alt="Tecnologias"
+          />
+
+          <h2>Mais de <span className={styles.alunos}>15 mil</span> já levaram sua carreira ao próximo nivel</h2>
+          <span>E você vai perder a chance de evoluir de uma vez por todas?</span>
+
+          <a>
+            <button>ACESSAR TURMA!</button>
+          </a>
         </div>
 
       </main>
