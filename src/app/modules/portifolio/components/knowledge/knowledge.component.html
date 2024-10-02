@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Conhecimentos</h2>
+  <ul>
+    <!-- qui contem um for que lista todos os dados de   -->
+    @for(item of  iconesConhecimento(); track item){
+    <li>
+      <img
+        [src]="item.src"
+        [alt]="item.alt"
+        loading="lazy"
+        width="22px"
+        height="24px"
+      />
+    </li>
+    }
+  </ul>
+</div>
