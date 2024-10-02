@@ -3,6 +3,23 @@
 <app-header/>
 
 <!-- main-->
- <main>
+<main>
   <app-knowledge />
- </main>
+  <app-experiencias/>
+
+  <!--- (defer) como é um componente pesado ele só vai renderizar
+        quando o scrool do mouse   chegar   -->
+  @defer (on viewport) {
+    <app-projetos />
+
+  } @placeholder { <!-- se demorar ele vao ostrar essa imagem -->
+    <section>
+      <h2>Carregando todos os projetos desenvolvidos...</h2>
+    </section>
+  }@error { <!-- se houver um erro -->
+    <section>
+      <h2>Ocorreu um erro no dowload do componente, tente novamente...</h2>
+    </section>
+  }
+
+</main>

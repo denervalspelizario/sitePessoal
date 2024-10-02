@@ -1,0 +1,22 @@
+
+<div class="container">
+  <h2>Útimas Experiências</h2>
+
+  <!--  fazendo um for pegando os dados do array experiencia  -->
+  @for(dados of arrayExperiecia(); track dados;){
+
+  <!-- neste looping os dados de article ficaram escondidos -->
+  <details> <!-- details é uma tag para informações adicionais -->
+    <summary>
+      <p>
+        <strong> {{ dados.summary.strong }} </strong>
+        {{ dados.summary.p }}
+      </p>
+    </summary>
+
+    <!-- com innerHtml estou afirmando que estou fazendo um texto com html
+         senão as tags de html vão aparecer -->
+    <article [innerHTML]="dados.text"></article>
+  </details>
+  }
+</div>

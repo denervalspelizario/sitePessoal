@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Projetos desenvolvidos</h2>
+
+  <ul>
+    <!-- for que pegara dados do array de projetos  -->
+    @for(dados of arrayProjetos(); track dados){
+    <li>
+      <button > /*(click)="openDialog(item)"*/
+        <img
+          [src]="dados.src"
+          [alt]="dados.alt"
+          [attr.width]="dados.with"
+          [attr.height]="dados.height"
+          loading="lazy"
+        />
+      </button>
+    </li>
+    }
+  </ul>
+</div>
