@@ -1,0 +1,7 @@
+obs:
+Após a criação do projeto
+Cria-se a estrutura de pastas
+
+por regra
+crio
+  html > css > a logica ts
