@@ -8,6 +8,12 @@ import { HeaderComponent } from './modules/portifolio/components/header/header.c
 import { KnowledgeComponent } from './modules/portifolio/components/knowledge/knowledge.component';
 import { ExperienciasComponent } from './modules/portifolio/components/experiencias/experiencias.component';
 import { ProjetosComponent } from './modules/portifolio/components/projetos/projetos.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
+// Material
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogProjectsComponent } from './modules/components/dialog/dialog-projects/dialog-projects.component';
+
 
 @NgModule({
   declarations: [
@@ -16,13 +22,17 @@ import { ProjetosComponent } from './modules/portifolio/components/projetos/proj
     HeaderComponent,
     KnowledgeComponent,
     ExperienciasComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    DialogProjectsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

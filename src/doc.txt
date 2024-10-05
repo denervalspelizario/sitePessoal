@@ -5,3 +5,6 @@ Cria-se a estrutura de pastas
 por regra
 crio
   html > css > a logica ts
+
+
+pesquisar sobre smecss

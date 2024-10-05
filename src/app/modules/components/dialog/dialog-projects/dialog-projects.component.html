@@ -1,0 +1,24 @@
+<header>
+  <!-- Titulo do modal -->
+  <h2 mat-dialog-title>{{ getData()?.title }}</h2>
+
+  <!-- botão do modal -->
+  <button (click)="closeModal()">
+    <img src="../../../../../assets/close.svg" alt="Botão para fechar o dialog" />
+  </button>
+</header>
+
+<!-- Conteudo do Modal  -->
+<mat-dialog-content>
+  <h3>Descrição</h3>
+
+  <article [innerHTML]="getData()?.description"></article>
+
+  <nav>
+    @for(dados of getData()?.links; track dados){
+    <a [href]="dados.href" target="_blank" class="btn btn-primary">
+      {{ dados.name }}
+    </a>
+    }
+  </nav>
+</mat-dialog-content>

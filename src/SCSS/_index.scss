@@ -1,0 +1,13 @@
+
+
+// qui chama todas as pastas do css
+
+@use "base"; // css global
+
+@use "layout"; // classes css
+
+@use "theme"; // variaveis de cor
+
+@use "components" // componentes
+
+
