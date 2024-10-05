@@ -13,6 +13,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 // Material
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogProjectsComponent } from './modules/components/dialog/dialog-projects/dialog-projects.component';
+import { MenuComponent } from './modules/portifolio/components/menu/menu.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { DialogProjectsComponent } from './modules/components/dialog/dialog-proj
     KnowledgeComponent,
     ExperienciasComponent,
     ProjetosComponent,
-    DialogProjectsComponent
+    DialogProjectsComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

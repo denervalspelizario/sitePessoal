@@ -1,18 +1,26 @@
 
-<!-- componente header -->
+
+<!-- menu -->
+<app-menu/>
+
+<!-- header -->
 <app-header/>
 
-<!-- main-->
+<!-- main -->
 <main>
+
+  <!-- tencologias conhecidas -->
   <app-knowledge />
+
+  <!-- experiencias -->
   <app-experiencias/>
 
-  <!--- (defer) como é um componente pesado ele só vai renderizar
-        quando o scrool do mouse   chegar   -->
+  <!--- (defer) como é um componente pesado
+        ele só vai renderizar quando o scrool do mouse   chegar   -->
   @defer (on viewport) {
     <app-projetos />
 
-  } @placeholder { <!-- se demorar ele vao ostrar essa imagem -->
+  }@placeholder { <!-- se demorar ele vao ostrar essa imagem -->
     <section>
       <h2>Carregando todos os projetos desenvolvidos...</h2>
     </section>
