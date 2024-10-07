@@ -14,6 +14,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogProjectsComponent } from './modules/components/dialog/dialog-projects/dialog-projects.component';
 import { MenuComponent } from './modules/portifolio/components/menu/menu.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+
+
 
 
 @NgModule({
@@ -30,7 +34,9 @@ import { MenuComponent } from './modules/portifolio/components/menu/menu.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [
     provideAnimationsAsync()

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+
+    isMobile: boolean = false;
+
+    @HostListener('window:resize', ['$event'])
+    onResize(event: any) {
+      this.isMobile = event.target.innerWidth <= 1150; // Define o breakpoint
+    }
+
+    ngOnInit() {
+      this.onResize({ target: { innerWidth: window.innerWidth } }); // Verifica a resolução inicial
+    }
 }
