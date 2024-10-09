@@ -36,7 +36,7 @@
 
   .header-img-perfil {
     position: relative;
-    top: 0px;
+    top: 25px;
     width: 400px;
   }
 
@@ -178,6 +178,7 @@
 
     .header-img {
       margin-left: 0px;
+      background: var(--white);
     }
 
     .header-img-perfil{
@@ -207,10 +208,10 @@
       width: 250px;
       height: 250px;
       margin-left: 0px;
+      background: var(--white);
     }
 
     .header-img-perfil{
-      background: var(--white);
       width: 250px;
     }
 

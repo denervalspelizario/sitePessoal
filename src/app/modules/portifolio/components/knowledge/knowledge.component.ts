@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 
 // Interface que tipa arruya de icones
 import { IKnowledge } from '../../interface/IknowledgeInterface';
+import { AppComponent } from './../../../../app.component';
 
 @Component({
   selector: 'app-knowledge',
@@ -29,8 +30,12 @@ export class KnowledgeComponent {
       alt: 'Ícone de conhecimento de angular',
     },
     {
-      src: 'assets/icons/knowledge/nodejs.svg',
-      alt: 'Ícone de conhecimento de nodejs',
+      src: '../../../../../assets/icons/c-sharp.svg',
+      alt: 'Ícone de conhecimento do .net',
+    },
+    {
+      src: '../../../../../assets/icons/react-native.svg',
+      alt: 'Ícone de conhecimento do react-native',
     },
   ]);
 }
