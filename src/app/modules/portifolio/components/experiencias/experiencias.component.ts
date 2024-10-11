@@ -15,7 +15,7 @@ export class ExperienciasComponent {
         strong: 'Desenvolvedor Freelancer',
         p: 'Freelancer | Set 2024 - Atual',
       },
-      text: '<p>Desenvolvo experiências web personalizadas como freelancer, criando landing pages e sites institucionais com foco na usabilidade e na performance. Utilizo tecnologias como HTML, CSS, TypeScript, Angular, C#, .NET e WordPress para construir interfaces intuitivas e eficazes, que atendam às necessidades de cada cliente.</p>',
+      text: '<p>• Desenvolvo experiências web personalizadas como freelancer, criando landing pages e sites institucionais com foco na usabilidade e na performance. Utilizo tecnologias como HTML, CSS, TypeScript, Angular, C#, .NET e WordPress para construir interfaces intuitivas e eficazes, que atendam às necessidades de cada cliente.</p>',
     },
     {
       summary: {

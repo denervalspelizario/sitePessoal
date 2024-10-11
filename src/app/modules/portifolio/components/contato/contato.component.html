@@ -1,0 +1,54 @@
+
+<section class="contato-container">
+
+  <div class="contato-container-in">
+
+    <div class="contato-form">
+      <form [formGroup]="contatoForm">
+        <h2>Gostaria que entrássemos em contato?</h2>
+
+        <div class="input-box">
+          <mat-form-field class="contato-input" appearance="outline">
+            <mat-label>Nome:</mat-label>
+            <input matInput id="nome" type="text"  formControlName="nome" placeholder="Nome " required>
+          </mat-form-field>
+        </div>
+
+        <div class="input-box">
+          <mat-form-field class="contato-input" appearance="outline">
+            <mat-label>Email:</mat-label>
+            <input matInput id="email" type="email"  formControlName="email" placeholder="Email " required>
+          </mat-form-field>
+        </div>
+
+        <div class="input-box">
+          <mat-form-field class="contato-input" appearance="outline">
+            <mat-label>Mensagem:</mat-label>
+
+            <textarea matInput matInput id="mensagem" type="text"  formControlName="mensagem" placeholder="Mensagem " required></textarea>
+          </mat-form-field>
+        </div>
+
+        <div class="example-button-container ">
+          <button
+            mat-fab extended
+            class="btn-form"
+            (click)="openDialog()"
+            [disabled]="!contatoForm.valid">
+            <mat-icon>email</mat-icon>
+            Enviar
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <img
+      src="../../../../../assets/web-site.png"
+      width="250px"
+      height="250px"
+      alt="imagem-site">
+  </div>
+</section>
+

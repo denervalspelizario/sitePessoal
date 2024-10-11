@@ -1,0 +1,30 @@
+
+
+.dialog-container{
+  width: 350px;
+  height: 250px;
+
+}
+
+.dialog-header {
+
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo à direita */
+  margin: 0;
+
+}
+h2 {
+  text-align: center;
+}
+.btn-close{
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary);
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+
+}

@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
+import {  NgModule  } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './modules/portifolio/pages/home/home.component';
@@ -11,11 +10,27 @@ import { ProjetosComponent } from './modules/portifolio/components/projetos/proj
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 // Material
-import {MatDialogModule} from '@angular/material/dialog';
 import { DialogProjectsComponent } from './modules/components/dialog/dialog-projects/dialog-projects.component';
 import { MenuComponent } from './modules/portifolio/components/menu/menu.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { ContatoComponent } from './modules/portifolio/components/contato/contato.component';
+
+// formulario angular material
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';  
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {
+  MatDialogModule,
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogTitle
+} from '@angular/material/dialog';
+
+
+
+
 
 
 
@@ -29,14 +44,26 @@ import {MatIconModule} from '@angular/material/icon';
     ExperienciasComponent,
     ProjetosComponent,
     DialogProjectsComponent,
-    MenuComponent
+    MenuComponent,
+    ContatoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
     MatDialogModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+
+    // formulario angular material
+    MatFormFieldModule,
+    MatInputModule,
+    //MatDialog,
+    MatDialogActions,
+    MatDialogClose,
+    MatDialogContent,
+    MatDialogTitle
   ],
   providers: [
     provideAnimationsAsync()
