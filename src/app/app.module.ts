@@ -27,6 +27,7 @@ import {
   MatDialogContent,
   MatDialogTitle
 } from '@angular/material/dialog';
+import { FooterComponent } from './modules/portifolio/components/footer/footer.component';
 
 
 
@@ -46,6 +47,7 @@ import {
     DialogProjectsComponent,
     MenuComponent,
     ContatoComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

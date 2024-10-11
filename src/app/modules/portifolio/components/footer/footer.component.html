@@ -1,0 +1,38 @@
+
+<footer class="container-footer">
+
+  <img src="../../../../../assets/logo-nome250.png" width="100px" height="100px" alt="">
+
+  <hr class="footer-line">
+  <div class="container-footer-in">
+
+    <div class="container-footer-copy">
+      <h3 class="titulo-footer">2024 - Dener Pelizario  ©</h3>
+    </div>
+
+    <div class="container-footer-icones">
+      <ul class="lista-icones">
+        <!-- qui contem um for que lista todos os dados de   -->
+        @for(item of  iconesRedesSociais(); track item){
+        <li >
+          <a [href]="item.link" target="_blank" class="icones">
+            <img
+            [src]="item.src"
+            [alt]="item.alt"
+            loading="lazy"
+            width="22px"
+            height="24px"
+          />
+          </a>
+
+        </li>
+        }
+      </ul>
+    </div>
+
+  </div>
+
+
+
+
+</footer>
