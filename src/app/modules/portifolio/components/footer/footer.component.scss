@@ -21,6 +21,8 @@
 }
 
 .titulo-footer{
+  padding-top: 10px;
+  font-size: 13px;
   color: var(--black-010);
   font-family: sans-serif;
   font-weight: 300;
@@ -47,3 +49,37 @@
   background: var(--grey);
 }
 
+.menu-links{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 200px;
+
+}
+
+.menu-link {
+
+  a {
+    font-family: "Open-sans", sans-serif;
+    color: var(--grey-footer);
+    padding-bottom: 8px;
+    text-decoration: none;
+    position: relative;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--blue); /* Cor do sublinhado */
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s ease; /* Suaviza a transição */
+
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+}

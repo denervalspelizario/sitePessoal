@@ -20,7 +20,7 @@ export class ProjetosComponent {
   // array com dados dos projetos
   public arrayProjetos = signal<IProjects[]>([
     {
-      src: '../../../../../assets/shih-tzu.jpg',
+      src: '../../../../../assets/SitesEmpresas/imobiliaria-sata-teresa.png',
       alt: 'Projeto Vida FullStack',
       title: 'Vida FullStack',
       with: '100px',
@@ -35,7 +35,7 @@ export class ProjetosComponent {
       ],
     },
     {
-      src: '../../../../../assets/shih-tzu.jpg',
+      src: '../../../../../assets/SitesEmpresas/padaria-amanhecer.png',
       alt: 'Projeto Vida FullStack 2',
       title: 'Vida FullStack 2',
       with: '100px',
