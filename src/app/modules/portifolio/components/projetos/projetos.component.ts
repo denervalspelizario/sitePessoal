@@ -20,32 +20,32 @@ export class ProjetosComponent {
   // array com dados dos projetos
   public arrayProjetos = signal<IProjects[]>([
     {
-      src: '../../../../../assets/SitesEmpresas/imobiliaria-sata-teresa.png',
-      alt: 'Projeto Vida FullStack',
-      title: 'Vida FullStack',
+      src: '../../../../../assets/lading-pages.png',
+      alt: 'Landing Pages desenvolvidas',
+      title: 'Landing Pages',
       with: '100px',
       height: '51px',
       description:
-        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+        '<p>Desenvolvo landing pages personalizadas e focadas em conversão, que vão te ajudar a:</p>  <p> • Captar leads qualificados: Atraia visitantes interessados em seus produtos ou serviços.</p> <p> • Aumentar suas vendas: Transforme visitantes em clientes com páginas persuasivas e otimizadas.</p> <p> • Divulgar suas ofertas: Apresente suas promoções e novidades de forma clara e objetiva. </p> <p> • Fortalecer sua marca: Crie landing pages com a identidade visual da sua empresa. </p>'  ,
       links: [
         {
-          name: 'Conheça o Blog',
-          href: 'https://vidafullstack.com.br',
+          name: 'Conheça meu portifolio',
+          href: 'https://wp-pages.denerdev.com.br',
         },
       ],
     },
     {
-      src: '../../../../../assets/SitesEmpresas/padaria-amanhecer.png',
-      alt: 'Projeto Vida FullStack 2',
-      title: 'Vida FullStack 2',
+      src: '../../../../../assets/sites-institucionais.png',
+      alt: 'Sites Institucionais',
+      title: 'Sites Institucionais',
       with: '100px',
       height: '51px',
       description:
-        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+        '<p>Desenvolvo sites institucionais modernos e eficazes, que vão te ajudar a:</p>  <p> • Fortalecer a presença online: Seja encontrado por seus clientes na internet.</p> <p> • Construir credibilidade: Transmita confiança e profissionalismo aos seus visitantes.</p> <p> • Apresentar seus produtos e serviços: Mostre o que sua empresa oferece de forma clara e organizada.</p> <p> • Gerar leads e vendas: Atraia novos clientes e aumente suas vendas online. </p>' ,
       links: [
         {
-          name: 'Conheça o Blog',
-          href: 'https://vidafullstack.com.br',
+          name: 'Conheça sites desenvolvidos',
+          href: '/sites-institucionais',
         },
       ],
     },

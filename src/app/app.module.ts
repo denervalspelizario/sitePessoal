@@ -28,6 +28,7 @@ import {
   MatDialogTitle
 } from '@angular/material/dialog';
 import { FooterComponent } from './modules/portifolio/components/footer/footer.component';
+import { SitesIntitucionaisComponent } from './modules/portifolio/pages/sites-intitucionais/sites-intitucionais.component';
 
 
 
@@ -48,6 +49,7 @@ import { FooterComponent } from './modules/portifolio/components/footer/footer.c
     MenuComponent,
     ContatoComponent,
     FooterComponent,
+    SitesIntitucionaisComponent,
   ],
   imports: [
     BrowserModule,
