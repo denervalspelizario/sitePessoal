@@ -1,4 +1,21 @@
-<div class="container-institucionais">
-  <img src="../../../../../assets/construcao.png" alt="">
+<div class="container-projetos">
+  <h2>Projetos</h2>
+  <ul>
+
+    @for(dados of arrayProjetos(); track dados){
+    <li>
+      <div class="card-projetos">
+        <h3>{{dados.title}}</h3>
+
+        <img [src]="dados.src" [alt]="dados.alt">
+        <p>{{dados.description}}</p>
+        
+        <a [href]="dados.route" class="btn-links">Ir ao Projeto</a>
+
+      </div>
+
+    </li>
+    }
+  </ul>
 
 </div>
