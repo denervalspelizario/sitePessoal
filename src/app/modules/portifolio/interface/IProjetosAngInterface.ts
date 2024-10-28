@@ -4,5 +4,6 @@ export interface IProjetosAng {
   description: string;
   src: string;
   alt: string;
+  tecnology: string;
   route: string;
 }
